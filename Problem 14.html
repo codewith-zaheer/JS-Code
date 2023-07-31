@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1> problem 14 </h1>
+<h2> The grade of student based on parcentage </h2>
+
+<script>
+
+var a=parseInt(prompt("Enter your parcetage "));
+
+switch(true){
+case(a>= 0 && a <= 33):
+document.write("You are fail");
+break;
+case(a>= 34 && a <= 55):
+document.write("Grade is D");
+break;
+case(a>= 56 && a <= 70):
+document.write("grade is  C");
+break;
+case(a>= 71 && a <= 85):
+document.write("grade is  B");
+break;
+case(a>= 86 && a <= 100):
+document.write("Grade is A");
+break;
+default:
+    alert("Pleace Enter correct parcentage");
+}
+
+
+</script>
+</body>
+</html>

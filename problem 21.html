@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Problem 21</h1>
+    <h2> Create an HTML page with a button. Write a JavaScript function that
+        triggers a confirm box with the message "Do you want to submit the
+        form?" If the user confirms, display an alert box with the message "Form
+        submitted successfully!" Otherwise, display an alert box with the message
+        "Form submission canceled." </h2>
+        <button onclick="a()"> confirm </button>
+        <script>
+    function a(){
+    var b= confirm("Do you want to submit the form?");
+    if (b=="confirm") {
+        alert("Form submitted successfully");
+    } 
+    else{
+        alert("Form submission canceled");
+    }
+}
+        </script>
+</body>
+</html>

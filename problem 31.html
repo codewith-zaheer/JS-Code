@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Problem 31</h1>
+    <h2> Write a JavaScript function called getWeightStatus that takes a BMI value
+        as an argument and returns a string indicating the weight status based on
+        the BMI value. Use the following ranges:
+        • BMI less than 18.5: "Underweight"
+        • BMI between 18.5 and 24.9: "Normal weight"
+        • BMI between 25 and 29.9: "Overweight"
+        • BMI 30 or greater: "Obese". </h2>
+        <script>
+    function getWeightStatus(){
+        var BMI=32
+        switch(true){
+     case(BMI < 18.5):
+     document.write("underweight");
+     break;
+     case(BMI > 18.5 && BMI < 24.9):
+     document.write("Normal weight");
+     break;
+     case(BMI > 25 && BMI < 29.9):
+     document.write("Overweight");
+     break;
+     case(BMI > 30):
+     document.write("Obese");
+     break;
+
+        }
+    }
+    getWeightStatus()
+        </script>
+</body>
+</html>
