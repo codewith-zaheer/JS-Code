@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    img {
+        padding: 3%;
+        margin-top: 0px;
+
+    }
+</style>
+
 <body>
-    
+    <h1> Problem 46 </h1>
+    <h2> Create an HTML page with an image element. Implement an "ondblclick"
+        event on the image that changes the image source to another image
+        when double‐clicked. </h2>
+    <img id="image" src="Bulboff.png" style="width: 250px;" onclick="fn()">
+
+    <script>
+        function fn() {
+            var image = document.getElementById("image");
+            if (image.getAttribute("src") == "Bulboff.png") {
+                image.setAttribute("src", "Bulbon.png");
+            } else {
+                image.setAttribute("src", "Bulboff.png");
+            }
+
+        }
+
+    </script>
+
 </body>
+
 </html>
